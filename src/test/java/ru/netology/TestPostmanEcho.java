@@ -18,22 +18,8 @@ public class TestPostmanEcho {
                 .then()
                 .statusCode(200)
                 .contentType(ContentType.JSON)
-                .body("data", equalTo("some data"));
+                .body("data", equalTo("some value"));
     }
-
-//    @Test
-//    void TestPostmanEchoV2() {
-//        given()
-//                .baseUri("https://postman-echo.com")
-//                .contentType("text/plain; charset=UTF-8")
-//                .body("Collections")
-//                .when()
-//                .post("/post")
-//                .then()
-//                .statusCode(200)
-//                .contentType(ContentType.JSON)
-//                .body("data", equalTo("Collections"));
-//    }
 }
 
 
